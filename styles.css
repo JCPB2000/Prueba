@@ -1,0 +1,383 @@
+
+/*Inicio*/
+/* Aquí inicio dando estilo general al cuerpo de la página, configurando la fuente, eliminando márgenes y paddings, y ajustando la altura de línea para que todo se vea uniforme. */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+/* Ahora diseño el encabezado principal, le doy un fondo oscuro, texto blanco y lo centro con un poco de padding para que se vea bien espacioso. */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    body {
+        background-color: #f0f8ff;
+    }
+    h1 {
+        color: #2c3e50;
+        text-align: center;
+    }
+}
+/* Aquí comienzo a estilizar la barra de navegación, quitándole los estilos de lista por defecto y centrando su contenido con un fondo oscuro. */
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #333;
+    text-align: center;
+}
+/* Enlaces de la navegación con efecto hover */
+.nav li {
+    display: inline;
+    margin: 0 15px;
+}
+ /* Aquí estilizo los enlaces de la barra de navegación, asignando color blanco y eliminando subrayado. También defino un efecto de fondo verde al pasar el mouse. */
+.nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav li a:hover {
+    background: #4CAF50;
+    border-radius: 5px;
+}
+/* Aquí estilizo las secciones para añadir espaciado interno y centrar el contenido. */
+section {
+    padding: 20px;
+    text-align: center;
+}
+/* Aquí ajusto el tamaño y estilo de las imágenes, agregando bordes redondeados. */
+.image {
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+}
+/* Aquí defino el estilo del pie de página con un fondo oscuro y texto blanco centrado. */
+footer {
+    background: #333;
+    color: white;
+    text-align: center
+}
+/* Aquí defino el estilo de los botones con un diseño moderno, bordes redondeados y efectos de transición para interacción. */
+.button {
+    display: inline-block; 
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    text-decoration: none; 
+    border-radius: 8px; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+/* Aquí defino un efecto hover para resaltar los botones, con cambio de color, escala y sombra. */
+.button:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+/* Aquí defino el efecto cuando el botón está activo, reduciendo la escala y ajustando la sombra. */
+.button:active {
+    background-color: #3e8e41; 
+    transform: scale(1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+/*contaco*/
+/* Aquí comienzo a estructurar el diseño de los contenedores para contacto, utilizando un sistema de cuadrícula. */
+.container {
+  
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+ 
+/* Aquí defino el estilo para una sección de imágenes con bordes redondeados y posicionamiento relativo. */
+ .image-section {
+    position: relative;
+    border-radius: 25px;
+ }
+ /* Aquí ajusto las imágenes dentro de la sección para ocupar el espacio completo y centrarlas. */
+ .image-section img {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+ /* Aquí defino un efecto de superposición para elementos flotantes dentro de la sección de imágenes. */
+ .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ }
+/* Aquí establezco el estilo de las imágenes en la sección de localización con un tamaño fijo y margen. */ 
+ .localitation img {
+    float: left; 
+    margin-right: 10px; 
+    width: 500px; 
+    left: 100; 
+    top: 50px; 
+
+     }
+/* Aquí estilizo los encabezados de la sección de localización con un color marrón. */
+.localitation h2{
+       
+     color: brown;
+         
+    }
+ 
+ /*formulario*/
+/* Aquí diseño un contenedor general con propiedades de alineación y un fondo claro. */
+ .container {
+    
+    justify-content: center;
+    align-items: center; 
+    background-color: #f4f4f4; 
+    margin: 0; 
+    background-color: #f4f4f4; 
+ }
+ /* Aquí diseño un formulario de contacto con un diseño limpio y profesional. */
+ .contact-form {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+ }
+ /* Aquí diseño las etiquetas del formulario para que sean claras y se ubiquen sobre sus respectivos campos. */
+ .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+ }
+ /* Aquí estilizo los campos de entrada y áreas de texto del formulario con bordes suaves y un diseño limpio. */
+ .contact-form input,
+ .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease;
+ }
+ /* Aquí diseño el efecto de enfoque para los campos del formulario, cambiando el color del borde y añadiendo una sombra. */
+.contact-form input:focus,
+ .contact-form input:focus,
+ .contact-form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+ }
+ /* Aquí impido que el área de texto se redimensione manualmente para mantener el diseño uniforme. */
+ .contact-form textarea {
+    resize: none;
+ }
+ /* Aquí diseño el botón del formulario para que sea atractivo, con bordes redondeados y transiciones suaves. */
+ .contact-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+ }
+ /* Aquí defino el efecto hover del botón del formulario para destacar la interacción visualmente. */
+ .contact-form button:hover {
+    background: #45a049;
+    transform: scale(1.02);
+ }
+ /* Aquí defino el efecto activo del botón para indicar un clic o presión. */
+ .contact-form button:active {
+    background: #3e8e41;
+ }   
+
+  /*Noticias*/
+/* Aquí establezco el diseño general de la sección de noticias con espaciado interno y un fondo claro. */
+.educacion-tecnologia {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    
+}
+/* Aquí estilizo el título principal de la sección de noticias para destacar el contenido. */
+.educacion-tecnologia h1 {
+    text-align: center;
+    justify-content: center; 
+    color: #0056b3;
+    font-size: 40px;
+    position: center;
+}
+/* Aquí estilizo los subtítulos de la sección de noticias con un diseño más discreto que el título principal. */
+.educacion-tecnologia h2 {
+        text-align: center;
+        justify-content: center; 
+        color: #060e0a;
+        font-size: 30px;
+        position: center;
+}
+/* Aquí estilizo los párrafos de la sección de noticias para legibilidad y coherencia visual. */
+.educacion-tecnologia p {
+      text-align: center;
+      justify-content: center; 
+      color: #060e0a;
+      font-size: 20px;
+      position: center;  
+}
+/* Aquí ajusto las imágenes de la sección de noticias para que se adapten bien al diseño centrado. */
+.educacion-tecnologia img {
+    display: block; 
+    margin: 0 auto; 
+    width: 30%; 
+    height: 250px; 
+}
+
+/*Servicios*/
+/* Aquí estructuro la sección "ofrecemos" como una cuadrícula con tres columnas, espacios amplios entre elementos y un diseño limpio. */
+.ofrecemos {
+text-align: center;
+grid-template-columns: repeat(3, 1fr); 
+grid-template-rows: repeat(3, auto); 
+gap: 100px; 
+padding: 50px;
+background-color: #ffffff;
+border: 2px solid #ccc;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Aquí diseño cada tarjeta individual (como "clases") con bordes, espaciado y fondo claro. */
+.clases {
+        border: 2px solid #000; 
+        padding: 15px; 
+        width: 300px; 
+        margin: 20px auto; 
+        background-color: #f0f0f0; 
+        border-radius: 10px; 
+        
+}
+/* Aquí diseño tarjeta apoyo*/
+.apoyo {
+    border: 2px solid #000; 
+    padding: 15px; 
+    width: 300px; 
+    margin: 20px auto; 
+    background-color: #f0f0f0; 
+    border-radius: 10px; 
+    
+}
+/* Aquí diseño tarjeta creatividad*/
+.creatividad {
+    border: 2px solid #000; 
+    padding: 15px; 
+    width: 300px; 
+    margin: 20px auto; 
+    background-color: #f0f0f0; 
+    border-radius: 10px; 
+}
+/* Aquí diseño tarjeta talleres*/
+.talleres {
+    border: 2px solid #000; 
+    padding: 15px; 
+    width: 300px; 
+    margin: 20px auto; 
+    background-color: #f0f0f0; 
+    border-radius: 10px; 
+}
+/* Aquí diseño tarjeta campamentos*/
+.campamentos {
+    border: 2px solid #000; 
+    padding: 15px; 
+    width: 300px; 
+    margin: 20px auto; 
+    background-color: #f0f0f0; 
+    border-radius: 10px; 
+}
+/* Aquí diseño tarjeta enseñanza*/
+.enseñanza {
+    border: 2px solid #000; 
+    padding: 15px; 
+    width: 300px; 
+    margin: 20px auto; 
+    background-color: #f0f0f0; 
+    border-radius: 10px; 
+}
+/* Aquí diseño tarjeta necesidades*/
+.necesidades {
+    border: 2px solid #000; 
+    padding: 15px; 
+    width: 300px; 
+    margin: 20px auto; 
+    background-color: #f0f0f0; 
+    border-radius: 10px; 
+}
+/* Aquí diseño tarjeta orientacion*/
+.orientacion {
+    border: 2px solid #000; 
+    padding: 15px; 
+    width: 300px; 
+    margin: 20px auto; 
+    background-color: #f0f0f0; 
+    border-radius: 10px; 
+}
+/* Aquí diseño un contenedor de cuadrícula para distribuir elementos pequeños en un diseño limpio. */
+.cuadros{
+    display: grid;
+            grid-template-columns: repeat(8, 1fr); 
+            grid-template-rows: repeat(3, auto); 
+            gap: 20px; 
+            max-width: 600px; 
+            background-color: #ffffff;
+            padding: 20px;
+}
+/* Aquí diseño el contenedor general para la galería, centrando el contenido y añadiendo bordes suaves. */
+.galeria {
+    text-align: center; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+/* Aquí ajusto las imágenes de la galería para que se centren, tengan un tamaño uniforme y bordes redondeados. */
+.galeria img {
+    display: block; 
+    margin: 10px auto; 
+    width: 300px; 
+    border-radius: 5px; 
+}
+
+/* Aquí estilizo los textos de la galería para que estén centrados y sean legibles. */
+.galeria p {
+    text-align: center; 
+    font-size: 1rem; 
+    margin: 10px auto; 
+    color: #333; 
+}
+
+body {
+    background-image: url('Imagenes/M4.jpg'); /* Cambia por la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Hace que el fondo se mantenga fijo al hacer scroll */
+}
